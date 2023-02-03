@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <h1>Todos</h1>
+      <h1>My todo-list</h1>
       <div className="todo">
         <input
           type="text"
@@ -27,16 +27,14 @@ function App() {
           onChange={(e) => setTodo(e.target.value)}
         />
       </div>
-      <button onClick={todoSubmitHandler}>Add todo</button>
+      <button onClick={todoSubmitHandler}>Add task</button>
 
       <div className="todos">
         <ul>
           {todos?.map((todo) => (
-            <li key={todo.id}>
+            <li key={todo.id}  >
               <p>{todo.task}</p>
-              <button onClick={() => dispatch(removeTodo(todo.id))}>
-                Remove
-              </button>
+              <button  onClick={() => dispatch(removeTodo(todo.id))}>Done</button>
             </li>
           ))}
         </ul>
