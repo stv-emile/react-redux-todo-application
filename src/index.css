@@ -3,10 +3,10 @@ body {
   align-content: flex-start;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 .bottomRight {
   position: fixed;
   top: 10px;
